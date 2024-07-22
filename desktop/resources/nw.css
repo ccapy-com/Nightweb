@@ -1,0 +1,209 @@
+.dark-gradient {
+	background-color: #000;
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #000000 0%, #4F5A64 100%);
+
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom, #000000 0%, #4F5A64 100%);
+
+	height: 100%;
+}
+
+.dark {
+	background-color: #303030;
+	color: #c0c0c0;
+}
+
+.top-bar {
+	overflow: visible;
+	background-color: #4f5a64;
+	margin-bottom: 0px;
+}
+
+.top-bar-section ul {
+	display: inline;
+	background-color: #4f5a64;
+}
+
+.top-bar-section ul li {
+	float: left;
+}
+
+.top-bar-section ul li>a {
+	padding-right: 15px;
+}
+
+.top-bar-section li a:not(.button) {
+	background-color: #4f5a64;
+}
+
+.top-bar-section li a:not(.button):hover {
+	background-color: rgba(192, 192, 192, 0.5);
+}
+
+.top-bar-section ul li.active>a {
+	background-color: #4f5a64;
+	border-bottom: thick solid #c0c0c0;
+}
+
+.top-bar-section ul li.active>a:hover {
+	background-color: rgba(192, 192, 192, 0.5);
+	border-bottom: thick solid #c0c0c0;
+}
+
+.home-button {
+	float: left;
+	background-image: url('logo_launcher.png');
+	background-size: 45px 45px;
+	background-repeat: no-repeat;
+	width: 45px;
+	height: 45px;
+}
+
+.home-button:hover {
+	background-color: #c0c0c0;
+}
+
+.title {
+	float: left;
+	margin: 10px;
+}
+
+.clear {
+	clear: both;
+}
+
+.grid-view-tile {
+	color: #fff;
+	text-shadow: 0px 0px 4px #000;
+	float: left;
+	padding: 5px;
+	border-right: 1px solid #c0c0c0;
+	border-bottom: 1px solid #c0c0c0;
+	overflow: hidden;
+}
+
+.grid-view-tile:hover {
+	color: #fff;
+	background-color: dodgerblue;
+}
+
+.dialog-buttons {
+	float: right;
+	clear: both;
+}
+
+.dialog-element {
+	margin: 6px;
+}
+
+.square-image {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.welcome {
+	max-width: 400px;
+	margin: auto;
+}
+
+.welcome-icon {
+	float: left;
+	clear: left;
+	padding: 25px;
+}
+
+.welcome-text {
+	padding: 20px;
+}
+
+#lightbox {
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.7);
+	text-align: center;
+}
+
+#profile-image {
+	background-image: url("profile.png");
+	width: 250px;
+	height: 250px;
+	margin: 10px auto 10px auto;
+	float: right;
+}
+
+#profile-inputs {
+	margin-right: 270px;
+}
+
+#profile-about {
+	height: 150px;
+}
+
+@media (max-width: 600px) {
+	#profile-image {
+		float: none;
+	}
+
+	#profile-inputs {
+		margin-right: 0px;
+		width: 100%;
+	}
+
+	.dialog-buttons {
+		float: none;
+	}
+}
+
+#profile-picker {
+	width: 50%;
+}
+
+#profile-clear {
+	float: right;
+}
+
+#new-post-body {
+	width: 100%;
+	height: 200px;
+}
+
+#post-body {
+	margin: 20px;
+}
+
+#post ul {
+	line-height: 0px;
+	list-style-type: none;
+}
+
+#attach-count {
+	margin-right: 5px;
+}
+
+#attach-picker {
+	margin-right: 5px;
+}
+
+#link-text {
+	width: 100%;
+}
+
+#search-text {
+	width: 100%;
+}
+
+#update-button {
+	display: none;
+}
+
+#webp-warning {
+	display: none;
+	color: red;
+}
